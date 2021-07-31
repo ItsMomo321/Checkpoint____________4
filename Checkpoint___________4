@@ -1,0 +1,52 @@
+Exercice 1
+Input
+def my_function(a,b):
+    if a>b:
+       return(a)
+    else:
+      return(b) 
+hello = my_function(1,9)
+print(hello)
+Output
+9
+
+Exercice 2
+Input
+hi = lambda a,b : [a+b,a-b]
+print(hi(2,6))
+Output
+[8, -4]
+
+Exercice 3
+#Function 1
+Input
+hello = lambda a,b,c : a+b+c
+print(hello(1,2,3))
+Output
+6
+#Function 2
+Input
+def my_function(a,b,c):
+  print(a*b*c)
+my_function(1,2,3)
+Ouput
+6
+#Function 3
+Input
+import numpy as np 
+list1 = 1,2,3
+listeven = [x for x in list1 if x%2 == 0]
+listodd = [x for x in list1 if x%2 != 0]
+print(sum(listeven),np.prod(listodd))
+Output
+2 3
+
+Exercice 4
+Input
+def last(n): 
+  return n[-1]
+def sort_list_last(lists):
+  return sorted(lists, key=last)
+print(sort_list_last([("green"), ("red"), ("yellow"), ("black"), ("white")]))
+Ouput
+['red', 'white', 'black', 'green', 'yellow']
